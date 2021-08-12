@@ -1,0 +1,208 @@
+﻿  CellWars.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+CellWars.cpp(30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  fastParser.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+fastParser.cpp(33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+fastParser.cpp(78): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+fastParser.cpp(95): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
+fastParser.cpp(105): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+fastParser.cpp(124): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+fastParser.cpp(137): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+fastParser.cpp(145): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+fastParser.cpp(168): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+fastParser.cpp(176): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+fastParser.cpp(201): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+fastParser.cpp(275): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+fastParser.cpp(492): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  FileSys.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+FileSys.cpp(37): warning C4018: '<': signed/unsigned mismatch
+  gamestructs.cpp
+  IBuilding.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\Interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+IBuilding.cpp(32): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+IBuilding.cpp(32): warning C4305: 'initializing': truncation from 'double' to 'float'
+IBuilding.cpp(101): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(114): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(127): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(140): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(153): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(166): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(179): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(192): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(206): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(219): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(232): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(250): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(263): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(275): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(287): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(299): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(311): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(323): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(335): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(347): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(359): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(371): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(386): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(398): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(410): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(422): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(434): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(448): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(460): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(472): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(484): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(496): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(508): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(520): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(532): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(544): warning C4305: 'argument': truncation from 'double' to 'float'
+IBuilding.cpp(581): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+IBuilding.cpp(646): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+IBuilding.cpp(647): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+IBuilding.cpp(648): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+IBuilding.cpp(649): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+IBuilding.cpp(661): warning C4244: 'return': conversion from 'float' to 'unsigned int', possible loss of data
+IBuilding.cpp(666): warning C4244: 'return': conversion from 'float' to 'unsigned int', possible loss of data
+  IEvents.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\Interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+IEvents.cpp(77): warning C4018: '>': signed/unsigned mismatch
+IEvents.cpp(91): warning C4018: '>': signed/unsigned mismatch
+IEvents.cpp(103): warning C4018: '<': signed/unsigned mismatch
+  IMap.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\Interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+IMap.cpp(93): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+IMap.cpp(99): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+IMap.cpp(131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+IMap.cpp(133): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  IPlayer.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\Interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+IPlayer.cpp(9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  ITek.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+ITek.cpp(63): warning C4018: '<': signed/unsigned mismatch
+ITek.cpp(77): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+ITek.cpp(95): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+ITek.cpp(96): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+ITek.cpp(105): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+ITek.cpp(130): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+ITek.cpp(162): warning C4018: '<': signed/unsigned mismatch
+ITek.cpp(176): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+ITek.cpp(194): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+ITek.cpp(195): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+ITek.cpp(204): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+ITek.cpp(269): warning C4018: '<': signed/unsigned mismatch
+ITek.cpp(283): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+ITek.cpp(301): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+ITek.cpp(302): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+ITek.cpp(311): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+ITek.cpp(349): warning C4018: '<': signed/unsigned mismatch
+  IVillage.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\Interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  IWindow.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+IWindow.cpp(22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+IWindow.cpp(53): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+IWindow.cpp(61): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+IWindow.cpp(65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+IWindow.cpp(67): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+IWindow.cpp(90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+IWindow.cpp(99): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\Interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+main.cpp(15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Menu.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+  Shader.cpp
+  Travian.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\Interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\Interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(72): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Travian.cpp(73): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Travian.cpp(75): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Travian.cpp(76): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Travian.cpp(94): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Travian.cpp(95): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Travian.cpp(171): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(333): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(359): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(360): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(361): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(362): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(443): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(450): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(492): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(529): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(535): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+Travian.cpp(535): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(539): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(556): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(598): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+Travian.cpp(598): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(602): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(619): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Travian.cpp(672): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Travian.cpp(688): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+LINK : fatal error LNK1181: cannot open input file 'sfml-graphics.lib'

@@ -1,0 +1,237 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Counter-Strike Team Coacher.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Travian.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(72): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(73): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(75): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(76): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(94): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(95): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(106): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(171): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(281): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(296): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(333): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(359): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(360): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(361): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(362): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(349): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(350): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(351): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(352): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(443): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(450): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(492): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(529): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(535): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+h:\codes\cell wars\base\empiria\travian.cpp(535): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(539): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(556): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(458): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(496): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(508): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(512): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(543): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(548): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(598): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+h:\codes\cell wars\base\empiria\travian.cpp(598): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(602): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(619): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(579): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(606): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(611): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\travian.cpp(672): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(688): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\travian.cpp(694): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  Shader.cpp
+  Menu.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+  main.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\main.cpp(15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+h:\codes\cell wars\base\empiria\main.cpp(60): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  IWindow.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\iwindow.cpp(22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\iwindow.cpp(53): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\iwindow.cpp(61): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\iwindow.cpp(65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\iwindow.cpp(67): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\iwindow.cpp(90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\iwindow.cpp(99): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  IVillage.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  ITek.cpp
+h:\codes\cell wars\base\empiria\itek.cpp(63): warning C4018: '<': signed/unsigned mismatch
+h:\codes\cell wars\base\empiria\itek.cpp(77): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(95): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(96): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(105): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(130): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(162): warning C4018: '<': signed/unsigned mismatch
+h:\codes\cell wars\base\empiria\itek.cpp(176): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(194): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(195): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(204): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(269): warning C4018: '<': signed/unsigned mismatch
+h:\codes\cell wars\base\empiria\itek.cpp(283): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(301): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(302): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(311): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\itek.cpp(349): warning C4018: '<': signed/unsigned mismatch
+  IPlayer.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\iplayer.cpp(9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  IMap.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\imap.cpp(93): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\imap.cpp(99): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\imap.cpp(131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\imap.cpp(133): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\imap.cpp(154): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\imap.cpp(172): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\imap.cpp(173): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\imap.cpp(174): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\imap.cpp(175): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\imap.cpp(176): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\imap.cpp(177): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+h:\codes\cell wars\base\empiria\imap.cpp(178): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  IEvents.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\ievents.cpp(77): warning C4018: '>': signed/unsigned mismatch
+h:\codes\cell wars\base\empiria\ievents.cpp(91): warning C4018: '>': signed/unsigned mismatch
+h:\codes\cell wars\base\empiria\ievents.cpp(103): warning C4018: '<': signed/unsigned mismatch
+  IBuilding.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\interfaces.h(67): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(69): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\interfaces.h(70): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\ibuilding.cpp(32): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+h:\codes\cell wars\base\empiria\ibuilding.cpp(32): warning C4305: 'initializing': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(101): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(114): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(127): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(140): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(153): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(166): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(179): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(192): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(206): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(219): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(232): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(250): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(263): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(275): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(287): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(299): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(311): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(323): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(335): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(347): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(359): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(371): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(386): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(398): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(410): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(422): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(434): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(448): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(460): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(472): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(484): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(496): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(508): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(520): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(532): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(544): warning C4305: 'argument': truncation from 'double' to 'float'
+h:\codes\cell wars\base\empiria\ibuilding.cpp(581): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\ibuilding.cpp(646): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\ibuilding.cpp(647): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\ibuilding.cpp(648): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\ibuilding.cpp(649): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\ibuilding.cpp(661): warning C4244: 'return': conversion from 'float' to 'unsigned int', possible loss of data
+h:\codes\cell wars\base\empiria\ibuilding.cpp(666): warning C4244: 'return': conversion from 'float' to 'unsigned int', possible loss of data
+  gamestructs.cpp
+  FileSys.cpp
+h:\codes\cell wars\base\empiria\filesys.cpp(37): warning C4018: '<': signed/unsigned mismatch
+  fastParser.cpp
+h:\codes\cell wars\base\empiria\fastparser.cpp(33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(78): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(95): warning C4312: 'type cast': conversion from 'DWORD' to 'char *' of greater size
+h:\codes\cell wars\base\empiria\fastparser.cpp(105): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(124): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(137): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\fastparser.cpp(145): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(168): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(176): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(201): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(275): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+h:\codes\cell wars\base\empiria\fastparser.cpp(492): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  CellWars.cpp
+h:\codes\cell wars\base\empiria\includes.h(88): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing value to bool 'true' or 'false' (performance warning)
+h:\codes\cell wars\base\empiria\cellwars.cpp(30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+h:\codes\cell wars\base\empiria\filesys.cpp(14): warning C4715: 'filesystem::GetFileByName': not all control paths return a value
+h:\codes\cell wars\base\empiria\filesys.cpp(57): warning C4715: 'filesystem::GetIDByName': not all control paths return a value
