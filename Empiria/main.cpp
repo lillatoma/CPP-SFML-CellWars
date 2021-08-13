@@ -11,18 +11,14 @@ mouse_t g_Mouse;
 int main()
 {
 	FreeConsole();
-
-	cgame_t Game;
-
 	srand(time(NULL));
-	//for (int i = 0x10; i < 0xC0; i++){	printf("\n%c - 0x", i);	std::cout << std::hex << (int)i;}
-	//Game.SetUp();
 	g_Files.LoadAll();
 	g_Files.ListLoadedFiles();
 
 	g_Window->create(sf::VideoMode(1280,720), "Cell Wars by zenkii1337", sf::Style::Titlebar | sf::Style::Close);
 	g_Window->setFramerateLimit(60);
-
+	
+	cgame_t Game;
 	Game.Initialize();
 	
 

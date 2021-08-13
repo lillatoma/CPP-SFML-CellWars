@@ -3,12 +3,12 @@
 
 bool cmatch_t::BotSafeThink(int id)
 {
-	if (GetEmptyCells() == 0)return BotFreeThink(id);
+	if (CalcEmptyCells() == 0)return BotFreeThink(id);
 	if (id < 2 || id > 10)return false;
 	if (profiles[id - 2].intelligence == 1)
 	{
 
-		int own_cells = GetOwnedCells(id + 2);
+		int own_cells = CalcOwnedCells(id + 2);
 
 		if (own_cells < 3)
 		{
@@ -61,12 +61,12 @@ bool cmatch_t::BotSafeThink(int id)
 
 				if (_id == -1) {
 					_id = r;
-					dist = GetDist(owned_id, r);
+					dist = CalcDistance(owned_id, r);
 				}
-				else if (GetDist(r, owned_id) < dist)
+				else if (CalcDistance(r, owned_id) < dist)
 				{
 					_id = r;
-					dist = GetDist(r, owned_id);
+					dist = CalcDistance(r, owned_id);
 				}
 			}
 			delete[] used;
@@ -157,7 +157,7 @@ bool cmatch_t::BotSafeThink(int id)
 		for (int i = 0; i < cell_count; i++)
 		{
 			if (cells[i].owner_id != 0)continue;
-			if (GetDist(own, i) < GetDist(own, tar))tar = i;
+			if (CalcDistance(own, i) < CalcDistance(own, tar))tar = i;
 		}
 
 		if (cells[own].species > cells[tar].species / 2 + 1)
@@ -445,7 +445,7 @@ bool cmatch_t::BotFullThink(int id)
 	else
 	{
 		int own[3] = { Random(0,cell_count-1),Random(0,cell_count - 1),Random(0,cell_count - 1) };
-		int max_owned_cells = GetOwnedCells(id + 2);
+		int max_owned_cells = CalcOwnedCells(id + 2);
 		
 		while (cells[own[0]].owner_id != id)
 		{
@@ -499,10 +499,11 @@ void cmatch_t::BotThink()
 			int decs_should_have_made = (profiles[i].spent_time - profiles[i].warmuptime) / profiles[i].decisiontime + 1;
 			if (decs_should_have_made > profiles[i].decisions_made)
 			{
-				auto perc = GetPercent(i + 2);
-				if (perc < 0.1 || GetOwnedCells(i + 2) == 0 || GetOwnedCells(i+2) == cell_count)continue;
+				//+2 is the offset between botprofile and player
+				auto perc = CalcPercent(i + 2);
+				if (perc < 0.1 || CalcOwnedCells(i + 2) == 0 || CalcOwnedCells(i+2) == cell_count)continue;
 				else if (isFull(i + 2))BotFullThink(i + 2);
-				else if ((perc < profiles[i].percent_to_freely_decide && GetEmptyCells() != 0) || Random(0, cell_count) > GetEmptyCells())profiles[i].decisions_made += BotSafeThink(i + 2);
+				else if ((perc < profiles[i].percent_to_freely_decide && CalcEmptyCells() != 0) || Random(0, cell_count) > CalcEmptyCells())profiles[i].decisions_made += BotSafeThink(i + 2);
 				else if (perc < profiles[i].percent_to_aggress)profiles[i].decisions_made += BotFreeThink(i + 2);
 				else profiles[i].decisions_made += BotAggress(i + 2);
 			}

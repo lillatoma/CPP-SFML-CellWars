@@ -114,7 +114,7 @@ struct mouse_t
 		return true;
 	}
 
-	bool IsBetween(int x, int y, int w, int h, int checkx, int checky)
+	static bool IsBetween(int x, int y, int w, int h, int checkx, int checky)
 	{
 		return x < checkx && y < checky && checkx < x + w && checky < y + h;
 	}

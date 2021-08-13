@@ -64,11 +64,11 @@ void cmatch_t::Physics()
 			for (int j = 0; j < cell_count; j++)
 			{
 				if (i <= j)continue;
-				auto dist = GetDist(i, j, diff);
+				auto dist = CalcDistance(i, j, diff);
 				if (dist * 2 < cells[i].size + cells[j].size)
 				{
 					//printf("\n %d with %d", i, j);
-					if(GetDist(i,j,diff) < GetDist(i,j))
+					if(CalcDistance(i,j,diff) < CalcDistance(i,j))
 						CalculateReaction(cells[i].velocityX, cells[i].velocityY, cells[i].size, cells[j].velocityX, cells[j].velocityY, cells[j].size, 10 ,10);
 				}
 
@@ -274,12 +274,15 @@ void cell_t::Set(int prs, int spe, int siz, int sp)
 
 void cmatch_t::Draw(bool finished)
 {
+	//Drawing all cells
 	for (int i = 0; i < cell_count; i++)
 	{
 		cells[i].Draw(finished);
 	}
 	static sf::CircleShape circle(1);
 	circle.setPointCount(5);
+	
+	//Drawing species
 	for (int i = 0; i < 10000; i++)
 	{
 
@@ -288,23 +291,24 @@ void cmatch_t::Draw(bool finished)
 			circle.setFillColor(g_Colors[species[i].owner_id]);
 			circle.setPosition(species[i].posX, species[i].posY);
 			//printf("%.f %.f\n", species[i].posX, species[i].posY);
-			IWindow::AddToRenderList(circle);
+			g_Window->draw(circle);
 		}
 	}
 
-	int y = 200;
-	for (int i = 0; i < 8; i++)
-	{
-		if (GetPercent(i + 2) > 1.f)
-		{
-			//char buf[48];
-			//int decs_should_have_made = (profiles[i].spent_time - profiles[i].warmuptime) / profiles[i].decisiontime + 1;
-			//sprintf(buf, "Int: %d | Moves : %d out of %d (%d)", profiles[i].intelligence,profiles[i].decisions_made, decs_should_have_made, profiles[i].spent_time);
-			//IWindow::RenderTextB(0, y, buf, 20, g_Colors[i + 2].r, g_Colors[i + 2].g, g_Colors[i + 2].b,128);
-			//y += 30;
-		}
-	}
+	//int y = 200;
+	//for (int i = 0; i < 8; i++)
+	//{
+	//	if (GetPercent(i + 2) > 1.f)
+	//	{
+	//		//char buf[48];
+	//		//int decs_should_have_made = (profiles[i].spent_time - profiles[i].warmuptime) / profiles[i].decisiontime + 1;
+	//		//sprintf(buf, "Int: %d | Moves : %d out of %d (%d)", profiles[i].intelligence,profiles[i].decisions_made, decs_should_have_made, profiles[i].spent_time);
+	//		//IWindow::RenderTextB(0, y, buf, 20, g_Colors[i + 2].r, g_Colors[i + 2].g, g_Colors[i + 2].b,128);
+	//		//y += 30;
+	//	}
+	//}
 
+	//Drawing the power bar
 	DrawPowerBar();
 
 
@@ -319,15 +323,22 @@ void cmatch_t::Produce()
 	static int fps = 0;
 	if (reset_timer)last = now;
 	int diff = duration_cast<milliseconds>(now - last).count();
-	if (pause)diff = 0;
+	
+	//There is nothing to calculate if the game is paused
+	if (pause)
+	{
+		diff = 0;
+		last = now;
+		return;
+	}
 
 	for (int i = 0; i < cell_count; i++)
 	{
-		if (cells[i].owner_id == 0)continue;
+		if (cells[i].owner_id == 0)continue; //<-- We skip 'world'
 		if(cells[i].species <= cells[i].size + 1)
-		cells[i].produced += (float)(cells[i].production_speed)*diff / 60000;
+		cells[i].produced += (float)(cells[i].production_speed)*diff / 60000; 
 		else
-			cells[i].produced += (float)(1200)*diff / 60000;
+			cells[i].produced += 1200.f*diff / 60000;
 		while (cells[i].produced > 1.f)
 		{
 			cells[i].produced -= 1.f;
@@ -337,8 +348,8 @@ void cmatch_t::Produce()
 				cells[i].species--;
 		}
 	}
-
 	last = now;
+
 }
 
 bool cell_t::isHovered()
@@ -352,34 +363,37 @@ void cell_t::Draw(bool finished)
 	static sf::CircleShape circle(size/2);
 
 
-
+	//Setting up for the filled inner circle, which shows us how filled up a cell is with species
+	//The circle grows with more species
 	circle.setPosition(posX - species / 2, posY - species / 2);
 	circle.setRadius(species / 2);
 	circle.setFillColor(sf::Color(g_Colors[owner_id].r, g_Colors[owner_id].g, g_Colors[owner_id].b, 192));
 	circle.setOutlineThickness(0);
-	
-	IWindow::AddToRenderList(circle);
+	g_Window->draw(circle);
 
+	//Setting up the most outer circle which is transparently filled with a thick outline
 	circle.setRadius(size / 2);
 	circle.setPosition(posX - size / 2, posY - size / 2);
 	circle.setFillColor(sf::Color(g_Colors[owner_id].r, g_Colors[owner_id].g, g_Colors[owner_id].b, 32));
 	circle.setOutlineThickness(size / 25);
 	circle.setOutlineColor(g_Colors[owner_id]);
 	circle.setPointCount(100);
-	IWindow::AddToRenderList(circle);
+	g_Window->draw(circle);
 
+	//Finally 3 small lines are drawn in the middle
 	for (int i = 0; i < 3; i++)
 	{
 		circle.setRadius(size * (i+1) / 8);
 		circle.setPosition(posX - size * (i + 1) / 8, posY - size * (i + 1) / 8);
-		circle.setFillColor(sf::Color(g_Colors[owner_id].r, g_Colors[owner_id].g, g_Colors[owner_id].b, 0));
+		circle.setFillColor(sf::Color(0, 0, 0, 0));
 		circle.setOutlineThickness(1);
 		circle.setOutlineColor(sf::Color(g_Colors[owner_id].r, g_Colors[owner_id].g, g_Colors[owner_id].b,128));
 		IWindow::AddToRenderList(circle);
 	}
 
-	int gx = g_Mouse.Coords.x, gy = g_Mouse.Coords.y;
-	if ((gx - posX)*(gx - posX) + (gy - posY)*(gy - posY) < size*size / 4 && !finished)
+	//If the match is still being played, and the cursor is on a cell
+	//we draw an overlay circle to indicate that the cell being hovered
+	if (isHovered() && !finished)
 	{
 		circle.setFillColor(sf::Color(255, 255, 255, 64));
 		circle.setOutlineColor(sf::Color(255, 255, 255, 64));
@@ -404,6 +418,7 @@ void cmatch_t::MoveSpecies(int a, int b)
 	for (int i = 0; i < 10000; i++)
 	{
 		if (count <= 0)break;
+		//Finding the first inactive species in order to make it active
 		if (!species[i].active)
 		{
 			species[i].active = true;
@@ -450,26 +465,24 @@ void cmatch_t::SimulateSpecies()
 	{
 		if (species[i].active)
 		{
+			//Practically this block moves a virus instance closer to their destination
+			//Then it recalculates the distance
 			float dx = species[i].posX - cells[species[i].target_id].posX;
 			float dy = species[i].posY - cells[species[i].target_id].posY;
 			float dist = sqrt(dx*dx+dy*dy);
 			
 			float nx, ny;
 			auto sp = species[i].speed;
-			//nx = (dist - sp*diff/1000) * species[i].posX + (sp*diff / 1000) *cells[species[i].target_id].posX;
-			//ny = (dist - sp*diff / 1000) * species[i].posY + (sp*diff / 1000) *cells[species[i].target_id].posY;
-
 			nx = (dist - sp*diff / 1000) * species[i].posX + (sp*diff / 1000) *cells[species[i].target_id].posX;
 			ny = (dist - sp*diff / 1000) * species[i].posY + (sp*diff / 1000) *cells[species[i].target_id].posY;
 			nx /= dist;
 			ny /= dist;
 			species[i].posX = nx;
 			species[i].posY = ny;
-			
-
 			dx = species[i].posX - cells[species[i].target_id].posX;
 			dy = species[i].posY - cells[species[i].target_id].posY;
 			dist = sqrt(dx*dx + dy*dy);
+			//If it's inside the cell, it should do something
 			if (dist < cells[species[i].target_id].size/2 - 4)
 			{
 				float angle = 90;
@@ -477,9 +490,15 @@ void cmatch_t::SimulateSpecies()
 					angle = atan(-dy / dx) * 180 / PI;
 				if (dx > 0)angle += 180;
 
+				//Cell destroy
 				species[i].active = false;
+
+				//Gross physics calculation
 				CalculateRelease(cells[species[i].target_id].velocityX, cells[species[i].target_id].velocityY, cells[species[i].target_id].size*2, species[i].speed, angle);
 
+				//If the virus instance has a cell from the same player, it reinforces it
+				//Otherwise it damages it, by reducing the virus-count by one
+				//In case of a cell reaching 0 'species', the ownership of it swaps in favour of the attacking virus' owner
 				if (species[i].owner_id == cells[species[i].target_id].owner_id)
 				{
 					cells[species[i].target_id].species++;
@@ -491,13 +510,14 @@ void cmatch_t::SimulateSpecies()
 					if (cells[species[i].target_id].species < 0) { cells[species[i].target_id].owner_id = species[i].owner_id; cells[species[i].target_id].species = 0; }
 				}
 			}
+			//It was for a glitch I cannot recall
 			if (isnan(species[i].posX) || isnan(species[i].posY))species[i].active = false;
 
 		}
 	}
 }
 
-float cmatch_t::GetDist(int a, int b)
+float cmatch_t::CalcDistance(int a, int b)
 {
 	auto dx = cells[a].posX - cells[b].posX;
 	auto dy = cells[a].posY - cells[b].posY;
@@ -505,7 +525,7 @@ float cmatch_t::GetDist(int a, int b)
 	return sqrt(dx*dx + dy*dy);
 }
 
-float cmatch_t::GetDist(int a, int b, int tickstogo)
+float cmatch_t::CalcDistance(int a, int b, int tickstogo)
 {
 	auto dx = cells[a].posX + cells[a].velocityX * tickstogo / 1000 - cells[b].posX - cells[b].velocityX * tickstogo / 1000;
 	auto dy = cells[a].posY + cells[a].velocityY * tickstogo / 1000 - cells[b].posY - cells[b].velocityY * tickstogo / 1000;
@@ -531,7 +551,7 @@ bool cmatch_t::isFull(int id)
 	return spec > size - 2 * cellc;
 }
 
-float cmatch_t::GetPercent(int id)
+float cmatch_t::CalcPercent(int id)
 {
 	int spec = 0;
 	int total_spec = 0;
@@ -556,7 +576,7 @@ float cmatch_t::GetPercent(int id)
 	return (float)(100 * spec) / total_spec;
 }
 
-int cmatch_t::GetOwnedCells(int id)
+int cmatch_t::CalcOwnedCells(int id)
 {
 	int cellc = 0;
 	for (int i = 0; i < cell_count; i++)
@@ -567,7 +587,7 @@ int cmatch_t::GetOwnedCells(int id)
 	return cellc;
 }
 
-int cmatch_t::GetOwnedSpecies(int id)
+int cmatch_t::CalcOwnedSpecies(int id)
 {
 	int spec = 0;
 	for (int i = 0; i < cell_count; i++)
@@ -588,7 +608,7 @@ int cmatch_t::GetOwnedSpecies(int id)
 	return spec;
 }
 
-int cmatch_t::GetEmptyCells()
+int cmatch_t::CalcEmptyCells()
 {
 	int c = 0;
 	for (int i = 0; i < cell_count; i++)
@@ -607,7 +627,7 @@ void cmatch_t::DrawPowerBar()
 	float x = 0;
 	for (int i = 1; i < 10; i++)
 	{
-		auto perc = GetPercent(i);
+		auto perc = CalcPercent(i);
 		float _x = perc * 1280 / 100;
 		int r = g_Colors[i].r;
 		int g = g_Colors[i].g;
@@ -619,23 +639,9 @@ void cmatch_t::DrawPowerBar()
 		IWindow::RenderOverlay(x, 715, _x+1, 10, r, g, b, 255);
 		x += _x;
 
+		//For our player we draw a triangle, and draw the percentage on top
 		if (i == 1)
 		{
-			
-			/*sf::Vertex l[] =
-			{
-			sf::Vertex(sf::Vector2f(600,600)),
-			sf::Vertex(sf::Vector2f(700,600)),
-			sf::Vertex(sf::Vector2f(650,670))
-			};
-
-			l[0].color = sf::Color(255, 0, 0, 255);
-			l[1].color = sf::Color(0, 255, 0, 255);
-			l[2].color = sf::Color(0, 0, 255, 255);
-
-			g_Window->draw(l, 3, sf::Triangles);
-			*/
-
 			sf::Vertex triangle[] =
 			{
 				sf::Vertex(sf::Vector2f(x,713)),
@@ -729,20 +735,6 @@ void cgame_t::Mouse()
 
 	static sf::Color sel_col = sf::Color(255, 255, 0, 255);
 	static sf::Color tar_col = sf::Color(32, 192, 0, 255);
-
-	/*sf::Vertex l[] =
-	{
-		sf::Vertex(sf::Vector2f(600,600)),
-		sf::Vertex(sf::Vector2f(700,600)),
-		sf::Vertex(sf::Vector2f(650,670))
-	};
-
-	l[0].color = sf::Color(255, 0, 0, 255);
-	l[1].color = sf::Color(0, 255, 0, 255);
-	l[2].color = sf::Color(0, 0, 255, 255);
-
-	g_Window->draw(l, 3, sf::Triangles);
-	*/
 
 	if (g_Mouse.isHolding())
 	{
@@ -979,6 +971,7 @@ void cgame_t::RenderIngame()
 
 	IWindow::RenderTextB(0, 0, lev, 16);
 
+	//Does everything when the match is being played
 	if (!ended)
 	{
 		Match.SimulateSpecies();
@@ -993,6 +986,8 @@ void cgame_t::RenderIngame()
 	}
 	else Match.reset_timer = true;
 	//if (GetAsyncKeyState(VK_F6) & 1)Match.MoveSpecies(1, 0);
+	
+	
 	Match.Draw(ended || Match.pause);
 
 	using namespace std::chrono;
@@ -1008,9 +1003,11 @@ void cgame_t::RenderIngame()
 
 	float alpha = (float)dif * 128 / 4000;
 
+	//Draws a red overlay in case of losing
 	if (ended && !won)IWindow::RenderOverlay(0, 0, 1280, 720, 128, 0, 0, min(alpha, 128));
 
-	if (ended || Match.GetPercent(1) == 0.f)
+	//If the match is finished, or the player loses, draws some buttons and text
+	if (ended || Match.CalcPercent(1) == 0.f)
 	{
 
 		char tim[64] = "";
@@ -1021,26 +1018,20 @@ void cgame_t::RenderIngame()
 
 		sprintf(tim, "Time elapsed: %d:%s%d.%s%s%d", min, ((sec < 10) ? ("0") : ("")), sec, ((ms < 100) ? ("0") : ("")), ((ms < 10) ? ("0") : ("")), ms);
 		for (int x = -1; x <= 1; x++)
-		{
 			for (int y = -1; y <= 1; y++)
 				IWindow::RenderTextB(585 + x, 150 + y, lev, 36, 0, 0, 0, 255);
-		}
 
 		IWindow::RenderTextB(585, 150, lev, 36, 255, 255, 255, 255);
 
 		for (int x = -1; x <= 1; x++)
-		{
 			for (int y = -1; y <= 1; y++)
 				IWindow::RenderTextB(565 + x, 200 + y, "Test finished!", 24, 0, 0, 0, 255);
-		}
 
 		IWindow::RenderTextB(565, 200, "Test finished!", 24, 255, 255, 255, 255);
 
 		for (int x = -1; x <= 1; x++)
-		{
 			for (int y = -1; y <= 1; y++)
 				IWindow::RenderTextB(515 + x, 230 + y, tim, 24, 0, 0, 0, 255);
-		}
 
 		IWindow::RenderTextB(515, 230, tim, 24, 255, 255, 255, 255);
 
@@ -1128,6 +1119,7 @@ void cgame_t::RenderIngame()
 		}
 
 	}
+	//F5 loads the highest level
 	if (GetAsyncKeyState(VK_F5) & 1)
 	{
 		Sleep(50);
@@ -1136,9 +1128,7 @@ void cgame_t::RenderIngame()
 		Match.pause = old_pause;
 	}
 
-
-
-
+	//Renders the pause sign
 	RenderPause();
 }
 
@@ -1160,6 +1150,7 @@ void cgame_t::RenderGraph()
 	static button_t again;
 	static button_t menu;
 	static bool gr = false;
+	//For static function setup
 	if (!gr)
 	{
 		again.main_color = sf::Color(192, 192, 192, 255);
@@ -1219,6 +1210,7 @@ void cgame_t::RenderMainMenu()
 {
 	static button_t buts[4];
 	static bool gr = false;
+	//Static functinon setup
 	if (!gr)
 	{
 		for (int i = 0; i < 4; i++)
@@ -1323,6 +1315,7 @@ void cgame_t::RenderOptions()
 
 	static button_t menu;
 
+	//Static function setup
 	if (!gr)
 	{
 		for (int i = 0; i < 5; i++)
@@ -1447,6 +1440,7 @@ void cgame_t::RenderSelect()
 	static button_t menu;
 	static bool gr = false;
 
+	//Static function setup
 	if (!gr)
 	{
 		menu.main_color = sf::Color(192, 192, 192, 255);
@@ -1546,7 +1540,7 @@ void cmatch_t::EditGraph()
 
 		for (int i = 0; i < 9; i++)
 		{
-			graph[points].spec[i] = GetOwnedSpecies(i + 1);
+			graph[points].spec[i] = CalcOwnedSpecies(i + 1);
 		}
 
 		graph_timer += 250;
@@ -1555,14 +1549,6 @@ void cmatch_t::EditGraph()
 
 void cmatch_t::ShowGraph()
 {
-	
-
-
-
-
-
-
-
 	bool active[9] = { false, false, false, false, false, false, false, false, false };
 	int peak = 0;
 	int points = graph_timer / 250;
@@ -1631,6 +1617,8 @@ void cmatch_t::ShowGraph()
 	static int last_peak = 0;
 	static int last_length = 0;
 
+	//It's very rare that the peak and exact length of two different matches are the same
+	//In case this would happen, the graph would be fully drawn, without the animation
 	if (last_peak != peak || last_length != timer)
 	{
 		last = now;

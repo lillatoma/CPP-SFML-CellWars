@@ -3,6 +3,7 @@
 
 void cgame_t::LoadMaxLevel()
 {
+	//Whaw, what a solution :D
 	if (level > 15)level = 15;
 	current_level = level;
 	Match.Reset(auto_pause);
