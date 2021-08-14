@@ -1,7 +1,15 @@
 # Cell Wars
 # INITIAL REQUIREMENTS
+
 -Windows computer
+
+-C++14 or newer (for devs only)
+
 -SFML (for devs only): https://www.sfml-dev.org/download.php
+
+# INTRODUCTION
+This is a fun hobby-project of mine originally from 2019 Feb. I always have like the old flash-game Phage Wars. This was my attempt to create something similar to it. I do not intend to release this game. 
+In 2021 Aug, I added comments to the code, and uploaded the project to GitHub.
 
 # GOAL
 There are multiple players in the game, all the opponents are controlled by the computer. You and the computer opponents fight **till only one survives**. The last survivor is the **the winner of the match**. Players are alive until they have viruses left. The more cells one has, the faster they produce viruses. Therefore, **area control** is a key mechanic. In order to take over a cell, one has to **reduce its power to 0**, and send one final virus in that takes the ownership. There are some cells with conditions that make them more favourable than other cells, such as faster ejection speed, production speed, or bigger capacity. There are 15 hand-crafted levels with an increasing difficulty to challenge the human opponents how deadly their virus would be.
