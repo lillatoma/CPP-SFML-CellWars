@@ -12,9 +12,13 @@ Below, we discuss every menu.
 ## Main Menu
 Pressing ESC redirects the player to the main menu.
 The main menu consists of 4 different buttons:
+
 **PLAY/CONTINUE:** Clicking on this button opens the highest level available for the player.
+
 **SELECT LEVEL:** Clicking on this button opens the Level Selection Menu.
+
 **OPTIONS:** Clicking on this button opens the Options Menu.
+
 **QUIT GAME:** Clicking on this button closes the application.
 ## Play/Continue In-Game Menu
 On the top left corner, the current level is visible. In the top right corner, there is a Pause/Continue button. Pressing the button, or hitting the 'P' key pauses/continues the game.
