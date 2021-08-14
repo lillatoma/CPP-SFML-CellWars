@@ -23,22 +23,31 @@ The main menu consists of 4 different buttons:
 ## Play/Continue In-Game Menu
 On the top left corner, the current level is visible. In the top right corner, there is a Pause/Continue button. Pressing the button, or hitting the 'P' key pauses/continues the game.
 After a match is finished or the player loses, there is a button in the bottom right corner.
+
 **NEXT**: Clicking on this button opens the Graph Menu.
 ## Level Selection Menu
 There are 15 buttons in the middle for each level ordered systematically. There might be several transparent buttons. These buttons are transparent because the adherent level has not been unlocked yet. The opaque buttons open the appropriate level.
 There is a Menu button that leads the user back to the Main Menu.
 ## Options Menu
 There are 4 buttons in the middle.
+
 **SHOW FPS:** Clicking on this button turns the fps meter on/off. Default is off.
+
 **X FPS:**: Changes the framerate. The user can swap to 30, 60, 120 or no fps limit. Default is 60.
+
 **COLOR:**: Clicking on this button changes the color of the virus the player has in-game.
+
 **AUTOPAUSE:** Clicking on this button turns the auto-pause at the beginning of a match on/off. Default is off.
+
 There is a Menu button that leads the user back to the Main Menu.
 ## Graph Menu
 This menu shows the statistics of the last match played.
 There are 2 buttons on the button left.
+
 **MENU:** Clicking on this button opens the Main Menu.
 In case of winning:
+
 **NEXT:** Opens the match on the next level.
 In case of losing:
+
 **AGAIN:** Opens the match on the current level
