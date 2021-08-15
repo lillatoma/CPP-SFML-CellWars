@@ -15,11 +15,11 @@ In 2021 Aug, I added comments to the code, and uploaded the project to GitHub.
 Unzip or unrar the file called "Cell Wars shipped".
 
 # GOAL
-There are multiple players in the game, all the opponents are controlled by the computer. You and the computer opponents fight **till only one survives**. The last survivor is the **the winner of the match**. Players are alive until they have viruses left. The more cells one has, the faster they produce viruses. Therefore, **area control** is a key mechanic. In order to take over a cell, one has to **reduce its power to 0**, and send one final virus in that takes the ownership. There are some cells with conditions that make them more favourable than other cells, such as faster ejection speed, production speed, or bigger capacity. There are 15 hand-crafted levels with an increasing difficulty to challenge the human opponents how deadly their virus would be.
+There are multiple players in the game, all the opponents are controlled by the computer. You and the computer opponents fight **till only one survives**. The last survivor is the  **winner of the match**. Players are alive until they have viruses left. The more cells one has, the faster they produce viruses. Therefore, **area control** is a key mechanic. In order to take over a cell, one has to **reduce its power to 0**, and send one final virus in that takes the ownership. There are some cells with conditions that make them more favourable than other cells, such as faster ejection speed, production speed, or bigger capacity. There are 15 hand-crafted levels with an increasing difficulty to challenge the players how deadly their virus would be.
 # MENUS
 
 All menus have a background with circles (of various sizes, transparencies, and movement speeds) moving around. This one is intented to make them more alive, and pleasurable to watch.
-Below, we discuss every menu.
+Below, each menu is discussed.
 ## Main Menu
 Pressing ESC redirects the player to the main menu.
 The main menu consists of 4 different buttons:
@@ -44,9 +44,9 @@ There are 4 buttons in the middle.
 
 **SHOW FPS:** Clicking on this button turns the fps meter on/off. Default is off.
 
-**X FPS:**: Changes the framerate. The user can swap to 30, 60, 120 or no fps limit. Default is 60.
+**X FPS:** Changes the framerate. The user can swap to 30, 60, 120 or no fps limit. Default is 60.
 
-**COLOR:**: Clicking on this button changes the color of the virus the player has in-game.
+**COLOR:** Clicking on this button changes the color of the virus the player has in-game.
 
 **AUTOPAUSE:** Clicking on this button turns the auto-pause at the beginning of a match on/off. Default is off.
 
