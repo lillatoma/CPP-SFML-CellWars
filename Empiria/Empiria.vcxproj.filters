@@ -19,9 +19,6 @@
     <Filter Include="Game">
       <UniqueIdentifier>{bba3d1a4-5a51-45b9-80c0-fc95ce4cad1f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Travian Data">
-      <UniqueIdentifier>{3a4a9d56-4ff7-4f24-8dec-e0a3a2c60686}</UniqueIdentifier>
-    </Filter>
     <Filter Include="CW Data">
       <UniqueIdentifier>{e09cfd53-9a1b-422d-b4c6-01a499d1a748}</UniqueIdentifier>
     </Filter>
@@ -51,15 +48,6 @@
     <ClInclude Include="Menu.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="Interfaces.h">
-      <Filter>Travian Data</Filter>
-    </ClInclude>
-    <ClInclude Include="enums.h">
-      <Filter>Travian Data</Filter>
-    </ClInclude>
-    <ClInclude Include="Effect.h">
-      <Filter>Travian Data</Filter>
-    </ClInclude>
     <ClInclude Include="structs.h">
       <Filter>CW Data</Filter>
     </ClInclude>
@@ -86,27 +74,6 @@
     <ClCompile Include="Menu.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="IMap.cpp">
-      <Filter>Travian Data</Filter>
-    </ClCompile>
-    <ClCompile Include="Travian.cpp">
-      <Filter>Travian Data</Filter>
-    </ClCompile>
-    <ClCompile Include="IPlayer.cpp">
-      <Filter>Travian Data</Filter>
-    </ClCompile>
-    <ClCompile Include="IVillage.cpp">
-      <Filter>Travian Data</Filter>
-    </ClCompile>
-    <ClCompile Include="IBuilding.cpp">
-      <Filter>Travian Data</Filter>
-    </ClCompile>
-    <ClCompile Include="IEvents.cpp">
-      <Filter>Travian Data</Filter>
-    </ClCompile>
-    <ClCompile Include="Shader.cpp">
-      <Filter>Travian Data</Filter>
-    </ClCompile>
     <ClCompile Include="CellWars.cpp">
       <Filter>CW Data</Filter>
     </ClCompile>
@@ -116,10 +83,10 @@
     <ClCompile Include="LoadLevel.cpp">
       <Filter>CW Data</Filter>
     </ClCompile>
-    <ClCompile Include="Background.cpp">
+    <ClCompile Include="CWMenu.h">
       <Filter>CW Data</Filter>
     </ClCompile>
-    <ClCompile Include="CWMenu.h">
+    <ClCompile Include="Background.cpp">
       <Filter>CW Data</Filter>
     </ClCompile>
   </ItemGroup>

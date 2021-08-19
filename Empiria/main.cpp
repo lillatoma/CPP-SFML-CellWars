@@ -1,5 +1,4 @@
 #include "includes.h"
-#include "Interfaces.h"
 #include "structs.h"
 
 sf::RenderWindow* g_Window = new sf::RenderWindow;

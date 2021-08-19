@@ -13,11 +13,11 @@ void cgame_t::SimulateBackground()
 	for (int i = 0; i < bg.CellCount; i++)
 	{
 		auto size = bg.Cells[i].size;
-		bg.Cells[i].posX += cos(bg.Cells[i].angle*PI / 180)*bg.Cells[i].velocity*diff/1000;
-		bg.Cells[i].posY -= sin(bg.Cells[i].angle*PI / 180)*bg.Cells[i].velocity*diff/1000;
+		bg.Cells[i].posX += cos(bg.Cells[i].angle*PI / 180)*bg.Cells[i].velocity*diff / 1000;
+		bg.Cells[i].posY -= sin(bg.Cells[i].angle*PI / 180)*bg.Cells[i].velocity*diff / 1000;
 		float anglediff = (float)(Random(0, 15))*diff / 1000 * Random(-1, 1);
 		bg.Cells[i].angle += anglediff;
-		
+
 		float vecX = cos(bg.Cells[i].angle*PI / 180)*bg.Cells[i].velocity;
 		float vecY = -sin(bg.Cells[i].angle*PI / 180)*bg.Cells[i].velocity;
 
@@ -38,7 +38,7 @@ void cgame_t::SimulateBackground()
 	}
 
 
-	
+
 
 
 
@@ -48,7 +48,7 @@ void cgame_t::DrawBackground()
 {
 	for (int i = 0; i < bg.CellCount; i++)
 	{
-		int c = 200 - bg.Cells[i].size/2;
+		int c = 200 - bg.Cells[i].size / 2;
 		static sf::CircleShape circle(bg.Cells[i].size / 2);
 		circle.setRadius(bg.Cells[i].size / 2);
 		circle.setFillColor(sf::Color(c, c, c, 192));
@@ -87,7 +87,7 @@ void cgame_t::ApplyBackgroundShader()
 
 	text.update(*g_Window);
 	a.setTexture(text);
-	
+
 
 	IWindow::RenderOverlay(60, 60, 1160, 600, 0, 0, 0, 128);
 
