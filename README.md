@@ -47,7 +47,8 @@ There is a Menu button that leads the user back to the Main Menu.
 This menu shows the statistics of the last match played.  
 There are 2 buttons on the button left.  
 
-**MENU:** Clicking on this button opens the Main Menu.  
+**MENU:** Clicking on this button opens the Main Menu.
+
 In case of winning:  
 **NEXT:** Opens the match on the next level.  
 In case of losing:  
