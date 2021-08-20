@@ -6,7 +6,7 @@
 -SFML (for devs only): https://www.sfml-dev.org/download.php
 
 # INTRODUCTION
-This is a fun hobby-project of mine originally from 2019 Feb. I always have like the old flash-game Phage Wars. This was my attempt to create something similar to it. I do not intend to release this game.  
+This is a fun hobby-project of mine (zenkiisGlitchHub) originally from 2019 Feb. I always have like the old flash-game Phage Wars. This was my attempt to create something similar to it. I do not intend to release this game.  
 In 2021 Aug, I added comments to the code, and uploaded the project to GitHub.
 
 # INSTALLATION
