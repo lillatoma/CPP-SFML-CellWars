@@ -66,3 +66,5 @@ If the user clicks on a cell that is owned by the user's virus, the following ac
 Some cells are more favourable than others, due to their faster production speed, bigger capacity, or faster ejection speed.  
 To win a match, the user must defeat all other viruses on the map to be the only virus controlling the cells.
 
+## Gameplay/Playthrough:
+https://www.youtube.com/watch?v=MPJZARggnzg
