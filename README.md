@@ -67,4 +67,4 @@ Some cells are more favourable than others, due to their faster production speed
 To win a match, the user must defeat all other viruses on the map to be the only virus controlling the cells.
 
 ## Gameplay/Playthrough:
-https://www.youtube.com/watch?v=MPJZARggnzg
+https://www.youtube.com/watch?v=YrXSk46S7Wc
