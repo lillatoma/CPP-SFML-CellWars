@@ -1,4 +1,8 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (Counter-Strike Team Coacher.vcxproj, Empiria.vcxproj, Local Travian.vcxproj, Pokero.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  FileSys.cpp
+h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+FileSys.cpp(37): warning C4018: '<': signed/unsigned mismatch
   main.cpp
 h:\codes\cell wars\base\empiria\fastParser.h(2): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
   h:\codes\cell wars\base\empiria\fastParser.h(2): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
@@ -7,7 +11,7 @@ h:\codes\cell wars\base\empiria\includes.h(89): warning C4800: 'SHORT': forcing 
 h:\codes\cell wars\base\empiria\structs.h(301): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 h:\codes\cell wars\base\empiria\structs.h(302): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 h:\codes\cell wars\base\empiria\structs.h(304): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-main.cpp(14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+main.cpp(13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating code
 h:\codes\cell wars\base\empiria\filesys.cpp(14): warning C4715: 'filesystem::GetFileByName': not all control paths return a value
   All 278 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.

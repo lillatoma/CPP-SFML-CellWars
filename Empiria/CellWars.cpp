@@ -388,7 +388,7 @@ void cell_t::Draw(bool finished)
 		circle.setFillColor(sf::Color(0, 0, 0, 0));
 		circle.setOutlineThickness(1);
 		circle.setOutlineColor(sf::Color(g_Colors[owner_id].r, g_Colors[owner_id].g, g_Colors[owner_id].b,128));
-		IWindow::AddToRenderList(circle);
+		_Window::AddToRenderList(circle);
 	}
 
 	//If the match is still being played, and the cursor is on a cell
@@ -397,7 +397,7 @@ void cell_t::Draw(bool finished)
 	{
 		circle.setFillColor(sf::Color(255, 255, 255, 64));
 		circle.setOutlineColor(sf::Color(255, 255, 255, 64));
-		IWindow::AddToRenderList(circle);
+		_Window::AddToRenderList(circle);
 	}
 }
 
@@ -636,7 +636,7 @@ void cmatch_t::DrawPowerBar()
 
 		//bool longen = ((int)(x+_x))
 
-		IWindow::RenderOverlay(x, 715, _x+1, 10, r, g, b, 255);
+		_Window::RenderOverlay(x, 715, _x+1, 10, r, g, b, 255);
 		x += _x;
 
 		//For our player we draw a triangle, and draw the percentage on top
@@ -656,7 +656,7 @@ void cmatch_t::DrawPowerBar()
 			char buf[16] = "";
 			sprintf(buf, "%.2f%c", perc, '%');
 
-			IWindow::RenderTextB(x - 25, 680, buf, 20, g_Colors[1].r, g_Colors[1].g, g_Colors[1].b);
+			_Window::RenderTextB(x - 25, 680, buf, 20, g_Colors[1].r, g_Colors[1].g, g_Colors[1].b);
 
 		}
 
@@ -756,7 +756,7 @@ void cgame_t::Mouse()
 						circle.setOutlineColor(tar_col);
 						circle.setOutlineThickness(2);
 						circle.setFillColor(sf::Color(0, 0, 0, 0));
-						IWindow::AddToRenderList(circle);
+						_Window::AddToRenderList(circle);
 					}
 					else if (i == cells[s])
 					{
@@ -766,7 +766,7 @@ void cgame_t::Mouse()
 						circle.setOutlineColor(sel_col);
 						circle.setOutlineThickness(2);
 						circle.setFillColor(sf::Color(0, 0, 0, 0));
-						IWindow::AddToRenderList(circle);
+						_Window::AddToRenderList(circle);
 
 
 						float dx = Match.cells[i].posX - g_Mouse.Coords.x;
@@ -912,7 +912,7 @@ void cgame_t::RenderPause()
 			}
 			g_Window->draw(play, 3, sf::Triangles);
 
-			IWindow::RenderTextB(514, 0, "The test is currently paused", 20);
+			_Window::RenderTextB(514, 0, "The test is currently paused", 20);
 
 		}
 		else
@@ -969,7 +969,7 @@ void cgame_t::RenderIngame()
 	bool ended = Match.hasEnded();
 	bool won = Match.hasWon();
 
-	IWindow::RenderTextB(0, 0, lev, 16);
+	_Window::RenderTextB(0, 0, lev, 16);
 
 	//Does everything when the match is being played
 	if (!ended)
@@ -1004,7 +1004,7 @@ void cgame_t::RenderIngame()
 	float alpha = (float)dif * 128 / 4000;
 
 	//Draws a red overlay in case of losing
-	if (ended && !won)IWindow::RenderOverlay(0, 0, 1280, 720, 128, 0, 0, min(alpha, 128));
+	if (ended && !won)_Window::RenderOverlay(0, 0, 1280, 720, 128, 0, 0, min(alpha, 128));
 
 	//If the match is finished, or the player loses, draws some buttons and text
 	if (ended || Match.CalcPercent(1) == 0.f)
@@ -1019,21 +1019,21 @@ void cgame_t::RenderIngame()
 		sprintf(tim, "Time elapsed: %d:%s%d.%s%s%d", min, ((sec < 10) ? ("0") : ("")), sec, ((ms < 100) ? ("0") : ("")), ((ms < 10) ? ("0") : ("")), ms);
 		for (int x = -1; x <= 1; x++)
 			for (int y = -1; y <= 1; y++)
-				IWindow::RenderTextB(585 + x, 150 + y, lev, 36, 0, 0, 0, 255);
+				_Window::RenderTextB(585 + x, 150 + y, lev, 36, 0, 0, 0, 255);
 
-		IWindow::RenderTextB(585, 150, lev, 36, 255, 255, 255, 255);
-
-		for (int x = -1; x <= 1; x++)
-			for (int y = -1; y <= 1; y++)
-				IWindow::RenderTextB(565 + x, 200 + y, "Test finished!", 24, 0, 0, 0, 255);
-
-		IWindow::RenderTextB(565, 200, "Test finished!", 24, 255, 255, 255, 255);
+		_Window::RenderTextB(585, 150, lev, 36, 255, 255, 255, 255);
 
 		for (int x = -1; x <= 1; x++)
 			for (int y = -1; y <= 1; y++)
-				IWindow::RenderTextB(515 + x, 230 + y, tim, 24, 0, 0, 0, 255);
+				_Window::RenderTextB(565 + x, 200 + y, "Test finished!", 24, 0, 0, 0, 255);
 
-		IWindow::RenderTextB(515, 230, tim, 24, 255, 255, 255, 255);
+		_Window::RenderTextB(565, 200, "Test finished!", 24, 255, 255, 255, 255);
+
+		for (int x = -1; x <= 1; x++)
+			for (int y = -1; y <= 1; y++)
+				_Window::RenderTextB(515 + x, 230 + y, tim, 24, 0, 0, 0, 255);
+
+		_Window::RenderTextB(515, 230, tim, 24, 255, 255, 255, 255);
 
 		if (won)
 		{
@@ -1061,10 +1061,10 @@ void cgame_t::RenderIngame()
 			for (int x = -1; x <= 1; x++)
 			{
 				for (int y = -1; y <= 1; y++)
-					IWindow::RenderTextB(553 + x, 270 + y, "Test successful!", 24, 0, 0, 0, 255);
+					_Window::RenderTextB(553 + x, 270 + y, "Test successful!", 24, 0, 0, 0, 255);
 			}
 
-			IWindow::RenderTextB(553, 270, "Test successful!", 24, 255, 255, 0, 255);
+			_Window::RenderTextB(553, 270, "Test successful!", 24, 255, 255, 0, 255);
 
 			/*for (int x = -1; x <= 1; x++)
 			{
@@ -1141,10 +1141,10 @@ void cgame_t::RenderGraph()
 	for (int x = -1; x <= 1; x++)
 	{
 		for (int y = -1; y <= 1; y++)
-			IWindow::RenderTextB(585 + x, 30 + y, lev, 36, 0, 0, 0, 255);
+			_Window::RenderTextB(585 + x, 30 + y, lev, 36, 0, 0, 0, 255);
 	}
 
-	IWindow::RenderTextB(585, 30, lev, 36, 255, 255, 255, 255);
+	_Window::RenderTextB(585, 30, lev, 36, 255, 255, 255, 255);
 
 
 	static button_t again;
@@ -1263,7 +1263,7 @@ void cgame_t::RenderMainMenu()
 
 
 
-	IWindow::RenderTextB(860, 675, "Created by: zenkii1337", 40, 255, 255, 255, 255);
+	_Window::RenderTextB(860, 675, "Created by: zenkii1337", 40, 255, 255, 255, 255);
 
 }
 
@@ -1274,7 +1274,7 @@ void cgame_t::RenderFlash(int i)
 	float _a = 64.f * (1000 - i) / 1000;
 	int a = _a;
 
-	IWindow::RenderOverlay(0, 0, 1280, 720, 255, 255, 255, a);
+	_Window::RenderOverlay(0, 0, 1280, 720, 255, 255, 255, a);
 
 }
 
@@ -1301,12 +1301,12 @@ void cgame_t::RenderFPS()
 {
 	char fps[16];
 	sprintf(fps, "%d FPS", get_fps());
-	IWindow::RenderTextB(1100, 0, fps, 16, 255, 255, 0, 255);
+	_Window::RenderTextB(1100, 0, fps, 16, 255, 255, 0, 255);
 }
 
 void cgame_t::RenderOptions()
 {
-	IWindow::RenderOverlay(100, 80, 1080, 560, 0, 0, 0, 128);
+	_Window::RenderOverlay(100, 80, 1080, 560, 0, 0, 0, 128);
 	static button_t buts[5];
 	static bool gr = false;
 	static int fps_cap = 1;
@@ -1584,11 +1584,11 @@ void cmatch_t::ShowGraph()
 
 
 
-	IWindow::RenderOverlay(240, 110, 800, 500, 0, 0, 0, 128);
+	_Window::RenderOverlay(240, 110, 800, 500, 0, 0, 0, 128);
 
 	for (int i = 0; i < 6; i++)
 	{
-		IWindow::RenderOverlay(240 + i * 160, 110, 1, 500, 32, 32, 32, 255);
+		_Window::RenderOverlay(240 + i * 160, 110, 1, 500, 32, 32, 32, 255);
 		char tim[16];
 
 		int _timer = graph_timer * i / 5;
@@ -1598,14 +1598,14 @@ void cmatch_t::ShowGraph()
 
 
 		sprintf(tim, "%d:%s%d", min, ((sec < 10) ? ("0") : ("")), sec);
-		IWindow::RenderTextB(225 + i * 160, 610, tim, 16);
+		_Window::RenderTextB(225 + i * 160, 610, tim, 16);
 
 
-		IWindow::RenderOverlay(240, 110 + i * 100, 800, 1, 32, 32, 32, 255);
+		_Window::RenderOverlay(240, 110 + i * 100, 800, 1, 32, 32, 32, 255);
 		if (i == 5)continue;
 		char co[16];
 		sprintf(co, "%d", peak*(5 - i) / 5);
-		IWindow::RenderTextB(200, 100 + i * 100, co, 16);
+		_Window::RenderTextB(200, 100 + i * 100, co, 16);
 
 	}
 

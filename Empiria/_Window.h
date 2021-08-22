@@ -1,7 +1,7 @@
 #pragma once
 #include "includes.h"
 
-struct IWindow
+struct _Window
 {
 	static void AddToRenderList(sf::Drawable &drawable, const sf::RenderStates &states = sf::RenderStates::Default);
 	static void RenderOverlay(int x, int y, int w, int h, int r, int g, int b, int _a);

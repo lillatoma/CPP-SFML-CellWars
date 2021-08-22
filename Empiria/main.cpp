@@ -1,10 +1,9 @@
 #include "includes.h"
 #include "structs.h"
 
+
 sf::RenderWindow* g_Window = new sf::RenderWindow;
 mouse_t g_Mouse;
-
-
 
 
 int main()

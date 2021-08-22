@@ -4,10 +4,10 @@
 #include <SFML\Graphics.hpp>
 #include <iostream>
 #include "fastParser.h"
-#include "ITek.h"
+#include "_Tek.h"
 #include "FileSys.h"
 #include <chrono>
-#include "IWindow.h"
+#include "_Window.h"
 
 extern sf::RenderWindow* g_Window;
 

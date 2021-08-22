@@ -119,8 +119,8 @@
     <ClInclude Include="FileSys.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="includes.h" />
-    <ClInclude Include="ITek.h" />
-    <ClInclude Include="IWindow.h" />
+    <ClInclude Include="_Tek.h" />
+    <ClInclude Include="_Window.h" />
     <ClInclude Include="gamestructs.h" />
     <ClInclude Include="structs.h" />
     <ClInclude Include="Vector.h" />
@@ -133,8 +133,8 @@
     <ClCompile Include="fastParser.cpp" />
     <ClCompile Include="FileSys.cpp" />
     <ClCompile Include="gamestructs.cpp" />
-    <ClCompile Include="ITek.cpp" />
-    <ClCompile Include="IWindow.cpp" />
+    <ClCompile Include="_Tek.cpp" />
+    <ClCompile Include="_Window.cpp" />
     <ClCompile Include="LoadLevel.cpp" />
     <ClCompile Include="main.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SFML_DYNAMIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>

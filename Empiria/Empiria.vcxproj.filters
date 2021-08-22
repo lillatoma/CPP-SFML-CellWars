@@ -33,14 +33,8 @@
     <ClInclude Include="includes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ITek.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Vector.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IWindow.h">
-      <Filter>Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="gamestructs.h">
       <Filter>Game</Filter>
@@ -51,12 +45,15 @@
     <ClInclude Include="structs.h">
       <Filter>CW Data</Filter>
     </ClInclude>
+    <ClInclude Include="_Tek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Window.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ITek.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FileSys.cpp">
@@ -64,9 +61,6 @@
     </ClCompile>
     <ClCompile Include="fastParser.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IWindow.cpp">
-      <Filter>Interfaces</Filter>
     </ClCompile>
     <ClCompile Include="gamestructs.cpp">
       <Filter>Game</Filter>
@@ -88,6 +82,12 @@
     </ClCompile>
     <ClCompile Include="Background.cpp">
       <Filter>CW Data</Filter>
+    </ClCompile>
+    <ClCompile Include="_Tek.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_Window.cpp">
+      <Filter>Interfaces</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

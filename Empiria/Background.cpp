@@ -54,10 +54,10 @@ void cgame_t::DrawBackground()
 		circle.setFillColor(sf::Color(c, c, c, 192));
 		circle.setPosition(bg.Cells[i].posX - bg.Cells[i].size / 2, bg.Cells[i].posY - bg.Cells[i].size / 2);
 		circle.setOutlineThickness(0);
-		IWindow::AddToRenderList(circle);
+		_Window::AddToRenderList(circle);
 	}
 
-	IWindow::RenderOverlay(0, 0, 1280, 720, 16, 40, 80, 192);
+	_Window::RenderOverlay(0, 0, 1280, 720, 16, 40, 80, 192);
 }
 
 void cgame_t::ApplyBackgroundShader()
@@ -83,13 +83,13 @@ void cgame_t::ApplyBackgroundShader()
 	static sf::Texture text;
 	static sf::Sprite a;
 
-	IWindow::RenderTextB(100, 100, "ASD", 16);
+	_Window::RenderTextB(100, 100, "ASD", 16);
 
 	text.update(*g_Window);
 	a.setTexture(text);
 
 
-	IWindow::RenderOverlay(60, 60, 1160, 600, 0, 0, 0, 128);
+	_Window::RenderOverlay(60, 60, 1160, 600, 0, 0, 0, 128);
 
 	sf::CircleShape circ(300);
 	circ.setTexture(&text);
