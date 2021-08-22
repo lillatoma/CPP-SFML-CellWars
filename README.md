@@ -6,7 +6,7 @@
 -SFML (for devs only): https://www.sfml-dev.org/download.php
 
 # INTRODUCTION
-This is a fun hobby-project of mine originally from 2019 Feb. I always have like the old flash-game Phage Wars. This was my attempt to create something similar to it. I do not intend to release this game.  
+This is a fun hobby-project of mine (zenkiisGlitchHub) originally from 2019 Feb. I always have like the old flash-game Phage Wars. This was my attempt to create something similar to it. I do not intend to release this game.  
 In 2021 Aug, I added comments to the code, and uploaded the project to GitHub.
 
 # INSTALLATION
@@ -53,3 +53,18 @@ In case of winning:
 **NEXT:** Opens the match on the next level.  
 In case of losing:  
 **AGAIN:** Opens the match on the current level  
+
+# IN-MATCH
+A cell looks like a circular object with a thick outline, and small inner circle-lines, filled with a color.  
+The map is filled with cells.  
+Empty, or world cells are grey, the player-controlled or virus occupied cells have vivid color.  
+If the user clicks on a cell that is owned by the user's virus, the following actions may be performed:
+- **Release the cell:** This happens if the user releases the mouse on the same cell or into empty world space.  
+- **Add another cell to selection:** This happens if the user hovers the mouse (while holding left-click) over another cell owned by the user.  
+- **Release the selected cells:** This happens if the user releases the mouse over a specific cell. All selected cells release 50% viruses directed towards the cell.  
+
+Some cells are more favourable than others, due to their faster production speed, bigger capacity, or faster ejection speed.  
+To win a match, the user must defeat all other viruses on the map to be the only virus controlling the cells.
+
+## Gameplay/Playthrough:
+https://www.youtube.com/watch?v=YrXSk46S7Wc
